@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+</head>
+<body>
+    
+<div class="container">
+ 
+    <header class="header">
+      <h1 id="title" class="text-center">Create Account</h1>
+      <p id="description" class="description text-center">Sign up for a free account with OurCompany</p>
+    </header>
+    
+      <form id="survey-form">
+        <div class="form-group">
+          <p id="first-name-label" for="first-name">First Name</p>
+          <input id="first-name"
+                 name="first-name"
+                 type="text" 
+                 class="form-control"
+                 required 
+                 placeholder="Enter first name"
+          />
+        </div>
+  
+        <div class="form-group">
+          <p id="last-name-label" for="last-name">Last Name</p> 
+          <input 
+                 id="last-name"
+                 name="last-name"
+                 type="text" 
+                 class="form-control"
+                 required 
+                 placeholder="Enter last name"
+          />
+        </div>
+  
+        <div class="form-group">
+          <p id="dob-label" for="dob">Date of Birth</p>
+          <input 
+                 id="dob" 
+                 name="dob"
+                 type="date" 
+                 class="form-control"
+                 required
+          />
+        </div>
+  
+        <div class="form-group">
+          <p id="email-label" for="email">Email</p>
+          <input 
+                 id="email"
+                 type="email"
+                 name="email"
+                 class="form-control"
+                 required 
+                 placeholder="Enter email address"
+          /> 
+        </div>
+        
+        <div class="form-group">
+          <p id="password-label" for="password">Password</p>
+          <input 
+                 id"password"
+                 type="password"
+                 name="password"
+                 class="form-control"
+                 required 
+                 placeholder="Enter password"
+          /> 
+        </div>
+        
+        <div class="form-group">
+          <p id="number-label" for="number">Phone Number</p>
+          <input 
+                 id="number" 
+                 type="number" 
+                 name="number"
+                 class="form-control"
+                 min="1000000000" 
+                 max="9999999999" 
+                 placeholder="Enter number"
+          />
+        </div>
+  
+        <div class="form-group">
+          <p>Education Level</p>
+          <select id="dropdown" name="education" class="form-control" required>
+              <option disable selected value>Select education level</option>
+              <option value="hs">High School Diploma</option>
+            <optgroup label="Post Secondary Studies">
+              <option value="certif">Certificate</option>
+              <option value="diploma">Dipploma</option>
+              <option value="Other">Other</option>
+            </optgroup>
+            <optgroup label="Bachelor Degree">
+              <option value="AppliedScience">BASc</option>
+              <option value="Science">BSc</option>
+              <option value="BusinessAdmin">BBA</option>
+              <option value="Arts">BA</option>
+              <option value="Education">BEd</option>
+              <option value="Other">Other</option>
+            </optgroup>
+            <optgroup label="Specialized Education">
+              <option value="master">Master's Degree</option>
+              <option value="phd">PhD</option>
+              <option value="Other">Other</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <p>Current Role</p>
+        <select id="dropdown2" name="role" class="form-control" required>
+          <option disable selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="Intern">Internship</option>
+          <option value="parttime">Part Time Job</option>
+          <option value="fulltime">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="other">Other</option>
+        </select>
+        </div> 
+  
+        <div class="form-group">
+          <p>Graduation Date</p>
+          <label>
+            <input
+                   id="Graduation"
+                   name="Grad-date"
+                   type="date"
+                   class="form-control"
+                   required
+            />
+          </label>
+        </div>
+  
+        <div class="form-group">
+          <p>How did you hear about us?</p>
+          <label>
+            <input
+                   name="audience-reach"
+                   value="facebook"
+                   type="radio"
+                   class="input-radio"
+            />Facebook
+          </label>
+            <input
+                   name="audience-reach"
+                   value="Instagram"
+                   type="radio"
+                   class="input-radio"
+            />Instagram
+          </label>
+            <input
+                   name="audience-reach"
+                   value="linkedin"
+                   type="radio"
+                   class="input-radio"
+                   checked
+            />LinkedIn
+          </label>
+            <input
+                   name="audience-reach"
+                   value="Other"
+                   type="radio"
+                   class="input-radio"
+            />Other
+          </label>
+         </div>
+  
+         <div class="form-group">
+           <p>Would you recommend us to a friend?
+             <span class="clue">Let us know!</span>     
+           </p>
+  
+           <label>
+              <input
+                     name="user-recommend"
+                     value="yes"
+                     type="checkbox"
+                     class="input-box"
+                     checked
+              />Yes
+            </label>
+           <label>
+              <input
+                     name="user-recommend"
+                     value="no"
+                     type="checkbox"
+                     class="input-box"
+              />No
+            </label>
+           <label>
+              <input
+                     name="user-recommend"
+                     value="Maybe"
+                     type="checkbox"
+                     class="input-box"
+              />Maybe
+            </label>
+        </div>
+  
+        <div class="form-group">
+          <p>Briefly describe your short-term career goals:</p>
+          <textarea 
+                    id="goals" 
+                    class="input-textarea"
+                    name="textarea" 
+                    rows="4" 
+                    cols="50">Enter your short-term career goals (1-2years).
+          </textarea>
+        </div>
+  
+        <div class="form-group">
+          <button 
+                  id="account" 
+                  type="submit"
+                  class="submit-button"
+             >Create Account
+          </button>
+          </div>
+        </form>
+        </div>
+    
+</body>
+</html>
